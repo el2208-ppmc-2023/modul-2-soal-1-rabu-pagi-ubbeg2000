@@ -24,18 +24,18 @@ int main() {
     fp = fopen(filename, "r");
     if (fp == NULL) {
         printf("Itu siapa dah?");
-        return 1;
+        return 0;
     }
 
     printf("Masukkan tanggal (yyyy-mm-dd): ");
     scanf("%s", date);
     if (strlen(date) != 10 || date[4] != '-' || date[7] != '-') {
         printf("Yang bener dong tanggalnya");
-        return 1;
+        return 0;
     }
     if (sscanf(date, "%d-%d-%d", &year, &month, &day) != 3) {
         printf("Yang bener dong tanggalnya");
-        return 1;
+        return 0;
     }
 
     while (fgets(line, sizeof(line), fp)) {
