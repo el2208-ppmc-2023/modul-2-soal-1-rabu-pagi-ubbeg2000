@@ -49,7 +49,7 @@ int main() {
     {
         printf("Jangan lupa bawa duit!");
     }else{
-        printf("Gaada apa apa bang tenang bang");   
+        printf("Gaada apa-apa bang tenang");   
     }
     
     fclose(fp);
