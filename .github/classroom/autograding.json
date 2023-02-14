@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "1",
+      "setup": "make main",
+      "run": "./main",
+      "input": "jupri.txt",
+      "output": "Itu siapa dah?",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "2",
+      "setup": "make main",
+      "run": "./main",
+      "input": "juleha.txt\r\n2023/02/11",
+      "output": "Yang bener dong tanggalnya",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "3",
+      "setup": "make main",
+      "run": "./main",
+      "input": "juleha.txt\r\n20235-02-11",
+      "output": "Yang bener dong tanggalnya",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "4",
+      "setup": "make main",
+      "run": "./main",
+      "input": "juleha.txt\r\n2023-02-11",
+      "output": "2023-02-11 Nonton koala di taman safari\r\nJangan lupa bawa duit!",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "5",
+      "setup": "make main",
+      "run": "./main",
+      "input": "juleha.txt\r\n2023-02-12",
+      "output": "Gaada apa-apa bang tenang",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
